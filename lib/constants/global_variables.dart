@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-String uri = 'http://192.168.1.3:3000';
+// String uri = 'http://192.168.1.2:3000';
+String uri = 'https://amazon-server-taha.onrender.com/';
+// String uri = 'https://kind-erin-salmon-cap.cyclic.app';
 
 class GlobalVariables {
   // COLORS
