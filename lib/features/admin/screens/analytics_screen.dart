@@ -1,4 +1,5 @@
 import 'package:amazon_clone/common/widgets/loader.dart';
+import 'package:amazon_clone/features/account/widgets/top_buttons.dart';
 import 'package:amazon_clone/features/admin/models/sales.dart';
 import 'package:amazon_clone/features/admin/services/admin_services.dart';
 import 'package:amazon_clone/features/admin/widgets/category_products_chart.dart';
@@ -36,6 +37,13 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
         ? const Loader()
         : Column(
             children: [
+              const SizedBox(
+                height: 10,
+              ),
+              const TopButtons(),
+              const SizedBox(
+                height: 10,
+              ),
               Text(
                 '\$$totalSales',
                 style: const TextStyle(

@@ -51,6 +51,7 @@ class _PostScreenState extends State<PostScreen> {
         : Scaffold(
             body: GridView.builder(
               itemCount: products!.length,
+              padding: const EdgeInsets.all(10),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2),
               itemBuilder: (context, index) {
@@ -63,23 +64,26 @@ class _PostScreenState extends State<PostScreen> {
                         image: productData.images[0],
                       ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Expanded(
-                          child: Text(
-                            productData.name,
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 2,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Expanded(
+                            child: Text(
+                              productData.name,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 2,
+                            ),
                           ),
-                        ),
-                        IconButton(
-                          onPressed: () => deleteProduct(productData, index),
-                          icon: const Icon(
-                            Icons.delete_outline,
+                          IconButton(
+                            onPressed: () => deleteProduct(productData, index),
+                            icon: const Icon(
+                              Icons.delete_outline,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 );
