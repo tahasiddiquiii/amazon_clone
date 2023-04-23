@@ -16,6 +16,7 @@ Overall, building this Amazon clone with Flutter, Node.js, Express, MongoDB, and
 https://drive.google.com/file/d/12EPNmo5OhNKg0vC0VmAOSHhPD6ENKQft/view?usp=share_link
 
 ## working video
+https://www.linkedin.com/feed/update/urn:li:activity:7055906833428865024/
 
 
 
